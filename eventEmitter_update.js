@@ -91,4 +91,6 @@ emitTest.addListener('newEvent', callbackB);
 emitTest.emit('newEvent');
 emitTest.emit('newEvent');
 
-emitTest.removeAllListeners();
+emitTest.emit('event');
+emitTest.removeAllListeners('event');
+emitTest.emit('event');
